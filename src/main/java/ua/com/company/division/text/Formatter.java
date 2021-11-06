@@ -60,10 +60,10 @@ public class Formatter {
     }
 
     private String addChar(int times, char character) {
-        var output = "";
+        StringBuilder output = new StringBuilder();
         for (var i = 0; i < times; i++)
-            output = output + character;
-        return output;
+            output.append(character);
+        return output.toString();
     }
 
 }
