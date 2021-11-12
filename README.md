@@ -4,10 +4,10 @@ Write an application that divides numbers and prints result into console. + JUni
 
 Example of result:
 
-![FirstCase_update](https://git.foxminded.com.ua/nikita.strokach/division/uploads/5544e6558acd407d3ccac21415f3b2b4/FirstCase_update.PNG)
+![FirstCase_update](https://git.foxminded.com.ua/nikita.strokach/division/uploads/44918027994f5c22ce00e1a4133caa35/FirstCase_update.PNG)
 
-![SecondCase_update](https://git.foxminded.com.ua/nikita.strokach/division/uploads/0ce4e246caa9320df8c0d81b37001ae0/SecondCase_update.PNG)
+![SecondCase_update](https://git.foxminded.com.ua/nikita.strokach/division/uploads/922db2879595aa09f2d97cca099d40ec/SecondCase_update.PNG)
 
-![ThirdCase_update](https://git.foxminded.com.ua/nikita.strokach/division/uploads/7914ade654d56b230b1a0c892a63eac1/ThirdCase_update.PNG)
-=======
+![ThirdCase_update](https://git.foxminded.com.ua/nikita.strokach/division/uploads/f7076e64aefd278886f4c7491984c01a/ThirdCase_update.PNG)
+
 
