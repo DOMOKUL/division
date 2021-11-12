@@ -3,13 +3,13 @@
 
 Write an application that divides numbers and prints result into console. + JUnit tests(!!!).
 
-Example of result:
+Example of results:
 
-![FirstCase_update](https://git.foxminded.com.ua/nikita.strokach/division/uploads/44918027994f5c22ce00e1a4133caa35/FirstCase_update.PNG)
+![FirstCase_update](https://git.foxminded.com.ua/nikita.strokach/division/uploads/d59e75a92edbfb2f002d2ede4afb3b6a/FirstCase_update.PNG)
 
-![SecondCase_update](https://git.foxminded.com.ua/nikita.strokach/division/uploads/922db2879595aa09f2d97cca099d40ec/SecondCase_update.PNG)
+![SecondCase_update](https://git.foxminded.com.ua/nikita.strokach/division/uploads/2ff1d03c37589dd6b79228fb6a4a6a8d/SecondCase_update.PNG)
 
-![ThirdCase_update](https://git.foxminded.com.ua/nikita.strokach/division/uploads/f7076e64aefd278886f4c7491984c01a/ThirdCase_update.PNG)
+![ThirdCase_update](https://git.foxminded.com.ua/nikita.strokach/division/uploads/eb164f3178e1ecedd64a5ed03b95fcf4/ThirdCase_update.PNG)
 
 =======
 
