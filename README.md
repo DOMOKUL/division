@@ -1,3 +1,4 @@
+<<<<<<< README.md
 ###### Task 4 Integer Division (OOP, algorithmization)
 
 Write an application that divides numbers and prints result into console. + JUnit tests(!!!).
@@ -10,4 +11,7 @@ Example of result:
 
 ![ThirdCase_update](https://git.foxminded.com.ua/nikita.strokach/division/uploads/f7076e64aefd278886f4c7491984c01a/ThirdCase_update.PNG)
 
+=======
+
+>>>>>>> README.md
 
