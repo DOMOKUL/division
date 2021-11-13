@@ -2,7 +2,7 @@ package ua.com.company.division.model;
 
 import ua.com.company.division.text.Step;
 
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Result {
@@ -10,7 +10,7 @@ public class Result {
     private final int dividend;
     private final int divisor;
     private final int outcome;
-    private ArrayList<Step> stepList;
+    private List<Step> stepList;
 
     public Result(int dividend, int divisor, int outcome) {
         this.dividend = dividend;
@@ -30,11 +30,11 @@ public class Result {
         return outcome;
     }
 
-    public ArrayList<Step> getStepList() {
+    public List<Step> getStepList() {
         return stepList;
     }
 
-    public void setStepList(ArrayList<Step> stepList) {
+    public void setStepList(List<Step> stepList) {
         this.stepList = stepList;
     }
 

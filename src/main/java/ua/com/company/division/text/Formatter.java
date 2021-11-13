@@ -18,21 +18,25 @@ public class Formatter {
         if (!result.getStepList().get(0).isLast()) {
             dividend = result.getStepList().get(0).getDividend();
         }
-        int removal = String.valueOf(result.getStepList().get(0).getDivision()).length() - String.valueOf(result.getStepList().get(0).getDividend()).length() + 1;
+        int removal = String.valueOf(result.getStepList().get(0).getDivision()).length() -
+                String.valueOf(result.getStepList().get(0).getDividend()).length() + 1;
         if (result.getDividend() < 0) {
             removal++;
         }
         output.add("_" + result.getDividend() + "|" + result.getDivisor());
-        output.add(addChar(removal, ' ') + dividend + addChar(String.valueOf(result.getDividend()).length() - removal - String.valueOf(dividend).length() + 1, ' ')
+        output.add(addChar(removal, ' ') + dividend + addChar(String.valueOf(result.getDividend()).length() - removal -
+                String.valueOf(dividend).length() + 1, ' ')
                 + "|" + addChar(Math.max(String.valueOf(result.getResult()).length(), String.valueOf(result.getDivisor()).length()), '-'));
         output.add(addChar(removal, ' ') + addChar(String.valueOf(dividend).length(), '-')
-                + addChar(String.valueOf(result.getDividend()).length() - removal - String.valueOf(dividend).length() + 1, ' ') + "|" + result.getResult());
+                + addChar(String.valueOf(result.getDividend()).length() - removal - String.valueOf(dividend).length() + 1, ' ') +
+                "|" + result.getResult());
         return output;
 
     }
 
     private StringJoiner buildBody(Result result, StringJoiner output) {
-        int removal = String.valueOf(result.getStepList().get(0).getDivision()).length() - String.valueOf(result.getStepList().get(0).getDividend()).length() + 1;
+        int removal = String.valueOf(result.getStepList().get(0).getDivision()).length() -
+                String.valueOf(result.getStepList().get(0).getDividend()).length() + 1;
         if (result.getDividend() < 0) {
             removal++;
         }
@@ -49,21 +53,20 @@ public class Formatter {
                 output.add(addChar(removal, ' ') + result.getStepList().get(i).getDivision());
             } else {
                 output.add(addChar(removal, ' ') + result.getStepList().get(i).getDivision());
-                if (String.valueOf(result.getStepList().get(i).getDivision()).length() > String.valueOf(result.getStepList().get(i).getDividend()).length()) {
+                if (String.valueOf(result.getStepList().get(i).getDivision()).length() >
+                        String.valueOf(result.getStepList().get(i).getDividend()).length()) {
                     removal++;
                 }
                 output.add(addChar(removal, ' ') + result.getStepList().get(i).getDividend());
-                output.add(addChar(removal, ' ') + addChar(String.valueOf(result.getStepList().get(i).getDividend()).length(), '-'));
+                output.add(addChar(removal, ' ') +
+                        addChar(String.valueOf(result.getStepList().get(i).getDividend()).length(), '-'));
             }
         }
         return output;
     }
 
     private String addChar(int times, char character) {
-        StringBuilder output = new StringBuilder();
-        for (var i = 0; i < times; i++)
-            output.append(character);
-        return output.toString();
+        return String.valueOf(character).repeat(Math.max(0, times));
     }
 
 }
