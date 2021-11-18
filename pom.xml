@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ua.com.company.division</groupId>
-    <artifactId>task4_divisionbar</artifactId>
+    <artifactId>division</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -21,10 +21,11 @@
             <version>5.8.1</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>RELEASE</version>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.8.1</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

@@ -4,9 +4,15 @@ import ua.com.company.division.math.Divider;
 import ua.com.company.division.model.Result;
 import ua.com.company.division.text.Formatter;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Properties;
+
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+
         var dividend = Integer.parseInt(args[0]);
         var divisor = Integer.parseInt(args[1]);
         Divider divider = new Divider();

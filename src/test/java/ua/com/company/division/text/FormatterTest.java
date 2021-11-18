@@ -108,4 +108,20 @@ class FormatterTest {
         String actual = formatter.format(divider.divide(-150,9));
         assertEquals(expected,actual);
     }
+
+    @Test
+    void formatResult_shouldReturnDivisionBarWithPositiveResult_whenDividePositiveByPositive(){
+        String expected = "_405022500|45" +"\n"+
+                " 405      |-------"+"\n"+
+                " ---      |9000500"+"\n"+
+                "    0"+"\n"+
+                "    0"+"\n"+
+                "    -"+"\n"+
+                "     225"+"\n"+
+                "     225"+"\n"+
+                "     ---"+"\n"+
+                "       0";
+        String actual = formatter.format(divider.divide(405022500, 45));
+        assertEquals(expected,actual);
+    }
 }
