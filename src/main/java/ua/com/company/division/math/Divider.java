@@ -6,7 +6,6 @@ import ua.com.company.division.text.Step;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class Divider {
 
     public Result divide(int dividend, int divisor) {

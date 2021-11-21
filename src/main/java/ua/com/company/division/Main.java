@@ -6,7 +6,6 @@ import ua.com.company.division.text.Formatter;
 
 import java.io.IOException;
 
-
 public class Main {
 
     public static void main(String[] args) throws IOException {
@@ -16,7 +15,5 @@ public class Main {
         Result result = divider.divide(dividend, divisor);
         Formatter formatter = new Formatter();
         System.out.print(formatter.format(result));
-
-
     }
 }

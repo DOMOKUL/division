@@ -1,6 +1,7 @@
 package ua.com.company.division.math;
 
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import ua.com.company.division.model.Result;
 import ua.com.company.division.text.Step;
 
