@@ -64,7 +64,7 @@ class DividerTest {
 
     @Test
     void divideInteger_shouldNotReturnResult_whenIntegerDivideByZero() {
-        String excepted = "Divisor can't be an 0";
+        String excepted = "Divisor can't be 0";
         Exception exception = assertThrows(IllegalArgumentException.class, () -> divider.divide(78454, 0));
         String actual = exception.getMessage();
         assertTrue(actual.contains(excepted));
