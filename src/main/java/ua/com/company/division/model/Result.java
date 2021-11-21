@@ -18,6 +18,13 @@ public class Result {
         this.outcome = outcome;
     }
 
+    public Result(int dividend, int divisor, int outcome, List<Step> stepList) {
+        this.dividend = dividend;
+        this.divisor = divisor;
+        this.outcome = outcome;
+        this.stepList = stepList;
+    }
+
     public int getDividend() {
         return dividend;
     }
@@ -54,5 +61,4 @@ public class Result {
     public int hashCode() {
         return Objects.hash(dividend, divisor, outcome, stepList);
     }
-
 }
