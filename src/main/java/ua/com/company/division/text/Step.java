@@ -3,24 +3,24 @@ package ua.com.company.division.text;
 import java.util.Objects;
 
 public class Step {
-    private final int dividen;
+    private final int dividend;
     private final int division;
     private final boolean last;
 
     public Step(int division, int dividend) {
-        this.dividen = dividend;
+        this.dividend = dividend;
         this.division = division;
         last = false;
     }
 
     public Step(int division) {
         this.division = division;
-        dividen = 0;
+        this.dividend = 0;
         last = true;
     }
 
     public int getDividend() {
-        return dividen;
+        return dividend;
     }
 
     public int getDivision() {
@@ -36,11 +36,11 @@ public class Step {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Step step = (Step) o;
-        return dividen == step.dividen && division == step.division && last == step.last;
+        return dividend == step.dividend && division == step.division && last == step.last;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(dividen, division, last);
+        return Objects.hash(dividend, division, last);
     }
 }
