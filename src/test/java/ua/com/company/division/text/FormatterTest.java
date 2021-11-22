@@ -26,7 +26,7 @@ class FormatterTest {
     @Test
     void formatResult_shouldReturnDivisionBar_whenInputTwoInteger() throws IOException {
         // arrange
-        try (FileInputStream in = new FileInputStream("src/test/resources/TwoInteger")) {
+        try (FileInputStream in = new FileInputStream("src/test/resources/TwoInteger.txt")) {
             properties.load(in);
             result = new Result(78454, 4, 19613, List.of(
                     new Step(7, 4),
@@ -49,7 +49,7 @@ class FormatterTest {
     @Test
     void formatResult_shouldReturnDivisionBar_whenInputTwoLargeInteger() throws IOException {
         // arrange
-        try (FileInputStream in = new FileInputStream("src/test/resources/TwoLargeInteger")) {
+        try (FileInputStream in = new FileInputStream("src/test/resources/TwoLargeInteger.txt")) {
             properties.load(in);
             result = new Result(630440, 610, 1033, List.of(
                     new Step(630, 610),
@@ -70,7 +70,7 @@ class FormatterTest {
     @Test
     void formatResult_shouldReturnDivisionBar_whenInputCarryOverRemainder() throws IOException {
         // arrange
-        try (FileInputStream in = new FileInputStream("src/test/resources/InputCarryOverRemainder")) {
+        try (FileInputStream in = new FileInputStream("src/test/resources/InputCarryOverRemainder.txt")) {
             properties.load(in);
             result = new Result(12350000, 1234, 10008, List.of(
                     new Step(1235, 1234),
@@ -90,7 +90,7 @@ class FormatterTest {
     @Test
     void formatResult_shouldReturnDivisionBar_whenDivideIntegerByOne() throws IOException {
         // arrange
-        try (FileInputStream in = new FileInputStream("src/test/resources/DivideIntegerByOne")) {
+        try (FileInputStream in = new FileInputStream("src/test/resources/DivideIntegerByOne.txt")) {
             properties.load(in);
             result = new Result(12341234, 1, 12341234, List.of(
                     new Step(1, 1),
@@ -116,7 +116,7 @@ class FormatterTest {
     @Test
     void formatResult_shouldReturnDivisionBarWithNegativeResult_whenDivideNegativeByInteger() throws IOException {
         // arrange
-        try (FileInputStream in = new FileInputStream("src/test/resources/DivideNegativeByInteger")) {
+        try (FileInputStream in = new FileInputStream("src/test/resources/DivideNegativeByInteger.txt")) {
             properties.load(in);
             result = new Result(-150, 9, -16, List.of(
                     new Step(15, 9),
@@ -136,7 +136,7 @@ class FormatterTest {
     @Test
     void formatResult_shouldReturnDivisionBarWithPositiveResult_whenDividePositiveByPositive() throws IOException {
         // arrange
-        try (FileInputStream in = new FileInputStream("src/test/resources/DividePositiveByPositive")) {
+        try (FileInputStream in = new FileInputStream("src/test/resources/DividePositiveByPositive.txt")) {
             properties.load(in);
             result = new Result(405022500, 45, 9000500, List.of(
                     new Step(405, 405),

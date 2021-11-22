@@ -18,7 +18,7 @@ public class Formatter {
     }
 
     private StringJoiner buildHead(Result result) throws IOException {
-        try (FileInputStream in = new FileInputStream("src/main/resources/VarChar")) {
+        try (FileInputStream in = new FileInputStream("src/main/resources/VarChar.txt")) {
             properties.load(in);
             var space = properties.getProperty("space");
             var dash = properties.getProperty("dash");
@@ -46,7 +46,7 @@ public class Formatter {
     }
 
     private StringJoiner buildBody(Result result, StringJoiner output) throws IOException {
-        try (FileInputStream in = new FileInputStream("src/main/resources/VarChar")) {
+        try (FileInputStream in = new FileInputStream("src/main/resources/VarChar.txt")) {
             properties.load(in);
             var space = properties.getProperty("space");
             var dash = properties.getProperty("dash");
