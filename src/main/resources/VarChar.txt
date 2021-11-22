@@ -4,3 +4,4 @@ underscore=_
 verticalBar=|
 space= \u0020
 dash=-
+
