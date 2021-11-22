@@ -13,7 +13,6 @@ import java.util.StringJoiner;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
 class FormatterTest {
 
     private Formatter formatter;
@@ -133,7 +132,6 @@ class FormatterTest {
         // assert
         assertEquals(getExpectedResult("src/test/resources/DividePositiveByPositive.txt"), actual);
     }
-
 
     private String getExpectedResult(String filePath) {
         StringJoiner expected = new StringJoiner("\n");
