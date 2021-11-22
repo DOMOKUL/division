@@ -20,15 +20,21 @@ class DividerTest {
 
     @Test
     void divideInteger_shouldNotHaveStep_whenDivideZeroByInteger() {
+        // arrange
         Result expected = new Result(0, 156, 0);
         Result actual = divider.divide(0, 156);
         List<Step> stepList = List.of(new Step(0));
+
+        // act
         expected.setStepList(stepList);
+
+        // assert
         assertEquals(expected, actual);
     }
 
     @Test
     void divideInteger_shouldReturnResultEqualToDividend_whenDivideIntegerByOne() {
+        // arrange
         Result expected = new Result(12341234, 1, 12341234);
         Result actual = divider.divide(12341234, 1);
         List<Step> stepList = List.of(new Step(1, 1),
@@ -40,56 +46,85 @@ class DividerTest {
                 new Step(3, 3),
                 new Step(4, 4),
                 new Step(0));
+
+        // act
         expected.setStepList(stepList);
+
+        // assert
         assertEquals(expected, actual);
     }
 
     @Test
     void divideInteger_shouldReturnNegativeResult_whenDivideNegativeByInteger() {
+        // arrange
         Result expected = new Result(-78, 10, -7);
         Result actual = divider.divide(-78, 10);
         List<Step> stepList = List.of(new Step(78, 70),
                 new Step(8));
+
+        // act
         expected.setStepList(stepList);
+
+        // assert
         assertEquals(expected, actual);
     }
 
     @Test
     void divideInteger_shouldReturnPositiveResult_whenDivideNegativeByNegative() {
+        // arrange
         Result expected = new Result(-150, -7, 21);
         Result actual = divider.divide(-150, -7);
         List<Step> stepList = List.of(new Step(15, 14), new Step(10, 7), new Step(3));
+
+        // act
         expected.setStepList(stepList);
+
+        // assert
         assertEquals(expected, actual);
     }
 
     @Test
     void divideInteger_shouldNotReturnResult_whenIntegerDivideByZero() {
+        // arrange
         String excepted = "Divisor can't be 0";
+
+        // act
         Exception exception = assertThrows(IllegalArgumentException.class, () -> divider.divide(78454, 0));
         String actual = exception.getMessage();
+
+        // assert
         assertTrue(actual.contains(excepted));
     }
 
     @Test
     void divideInteger_shouldReturnRemainderEquals0_whenDividendEqualsToDivisor() {
+        // arrange
         Result expected = new Result(630440, 630440, 1);
         Result actual = divider.divide(630440, 630440);
         List<Step> stepList = List.of(new Step(630440, 630440),
                 new Step(0));
+
+        // act
         expected.setStepList(stepList);
+
+        // assert
         assertEquals(expected, actual);
     }
 
     @Test
     void divideInteger_shouldReturnRightResult_whenDividendHaveZeros() {
+        // arrange
         Result expected = new Result(405022500, 45, 9000500);
         Result actual = divider.divide(405022500, 45);
         List<Step> stepList = List.of(new Step(405, 405),
                 new Step(0, 0),
                 new Step(225, 225),
                 new Step(0));
+
+        // act
         expected.setStepList(stepList);
+
+        // assert
         assertEquals(expected, actual);
     }
 }
